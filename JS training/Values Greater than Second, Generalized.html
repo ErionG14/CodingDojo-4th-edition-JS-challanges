@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Values Greater than Second, Generalized</title>
+</head>
+
+<body>
+    <script>
+        function valuesGreaterThanSecond(arr) {
+            if (arr.length < 2) {
+                console.log('the arrays length is too small');
+            }
+            else {
+                var newArray = [];
+                for (var i = 0; i < arr.length; i++) {
+
+                    if (arr[i] > arr[1]) {
+
+                        newArray.push(arr[i]);
+                    }
+                }
+                console.log(newArray);
+            }
+
+        }
+        valuesGreaterThanSecond([3, 4, 5, 6]);
+        // valuesGreaterThanSecond([3]);
+
+    </script>
+</body>
+
+</html>
